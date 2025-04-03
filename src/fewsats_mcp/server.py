@@ -55,6 +55,13 @@ async def payment_info(pid: str) -> str:
     If payment status is `needs_review` inform the user he will have to approve it at app.fewsats.com"""
     return handle_response(Fewsats().payment_info(pid))
 
+@mcp.tool()
+async def billing_info() -> str:
+    """Retrieve the user's billing information.
+    Returns billing details including name, address, and other relevant information.
+    This information can also be used as shipping address for purchases."""
+    return handle_response(Fewsats().billing_info())
+
 
 def main():
     mcp.run(transport='stdio')
