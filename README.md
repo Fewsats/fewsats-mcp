@@ -1,5 +1,7 @@
 # fewsats-mcp: A Fewsats MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@Fewsats/fewsats-mcp)](https://smithery.ai/server/@Fewsats/fewsats-mcp)
+
 ## Overview
 
 This MCP server integrates with [Fewsats](https://fewsats.com) and allows AI Agents to purchase anything in a secure way.
@@ -38,6 +40,14 @@ MCP is
 
 
 ## Installation
+
+### Installing via Smithery
+
+To install Fewsats Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Fewsats/fewsats-mcp):
+
+```bash
+npx -y @smithery/cli install @Fewsats/fewsats-mcp --client claude
+```
 
 ### Using uv (recommended)
 
